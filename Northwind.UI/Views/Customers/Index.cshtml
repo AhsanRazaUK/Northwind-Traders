@@ -1,0 +1,68 @@
+﻿@model PagingList<CustomerViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container mt-3">
+    <h4>Customers</h4>
+
+    <table class="table table-responsive table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ContactName)
+                </th>
+               
+
+                <th>
+                    @Html.DisplayNameFor(model => model.CompanyName)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Address)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PostalCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ContactName)
+                    </td>
+
+                  
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CompanyName)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PostalCode)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.CustomerId })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @*@(await Component.InvokeAsync("MyPager", new { pagingList = Model }))*@
+
+    <partial name="PagerBootstrap4" model="@this.Model" />
+
+</div>

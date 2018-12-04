@@ -1,0 +1,17 @@
+﻿@model EditCustomerViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container mt-3">
+    <h2>Edit</h2>
+
+    @await Html.PartialAsync("EditCustomer", Model.CustomerViewModel)
+    <div>
+        <a asp-action="Index">Back to Customers</a>
+    </div>
+</div>
+<div class="container mt-3">
+    @await Html.PartialAsync("Orders", Model.OrdersViewModel)
+</div>

@@ -1,0 +1,36 @@
+﻿@model int
+<!-- Under Construction -->
+<nav>
+    <ul class="pagination">
+
+        <li class="page-item">
+            <a asp-action="Index"
+               class="page-link"
+               asp-controller="Home"
+               asp-route-page="1">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">First</span>
+            </a>
+        </li>
+        @for (int item = 1; item <= Model; item++)
+        {
+            <li class="page-item">
+                <a asp-action="Index"
+                   class="page-link"
+                   asp-controller="Home"
+                   asp-route-page="@item">
+                    @item
+                </a>
+            </li>
+        }
+        <li class="page-item">
+            <a asp-action="Index"
+               class="page-link"
+               asp-controller="Home"
+               asp-route-page="@Model">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Last</span>
+            </a>
+        </li>
+    </ul>
+</nav>

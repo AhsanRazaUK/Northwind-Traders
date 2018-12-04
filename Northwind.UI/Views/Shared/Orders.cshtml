@@ -1,0 +1,46 @@
+﻿@model IEnumerable<OrdersViewModel>
+
+<table class="table table-responsive thead-dark">
+    <thead class="bg-light">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Orders.OrderId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Orders.OrderDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Orders.ShippedDate)
+            </th>
+
+            <th>Products</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Orders.OrderId)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Orders.OrderDate)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Orders.ShippedDate)
+                </td>
+
+                <td>
+                    <ul>
+                        @foreach (var p in item.OrderProducts)
+                        {
+                            <li>@p.ProductName</li>
+                        }
+                    </ul>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

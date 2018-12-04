@@ -1,0 +1,145 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\NorthwindMapperProfile.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\getCommonTotalScroll.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\getComputedStyle.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\getElementClientRect.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\getElementClientRect.test.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\getHTMLElementScroll.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\getNodeScroll.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\getOffsetParent.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\getParentNode.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\getParentNode.test.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\getScrollParent.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\getWindow.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\getWindowScroll.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\getWindowScroll.test.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\dom-utils\listScrollParents.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\enums.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\index.js" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\index.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\index.js.map" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\index.min.js" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\index.min.js.map" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\modifiers\applyStyles.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\modifiers\computeStyles.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\modifiers\computeStyles.test.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\modifiers\index.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\modifiers\preventOverflow.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\types.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\computeOffsets.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\computeOffsets.test.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\debounce.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\expandEventListeners.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\expandEventListeners.test.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\format.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\getAltAxis.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\getAltAxis.test.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\getAltLen.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\getAltLen.test.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\getBasePlacement.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\getBasePlacement.test.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\getMainAxisFromPlacement.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\getOppositePlacement.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\getVariationPlacement.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\getVariationPlacement.test.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\orderModifiers.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\unwrapJqueryElement.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\cjs\utils\validateModifiers.js.flow" />
+    <None Include="wwwroot\lib\popper.js\dist\es\index.js" />
+    <None Include="wwwroot\lib\popper.js\dist\es\index.js.map" />
+    <None Include="wwwroot\lib\popper.js\dist\es\index.min.js" />
+    <None Include="wwwroot\lib\popper.js\dist\es\index.min.js.map" />
+    <None Include="wwwroot\lib\popper.js\dist\umd\index.js" />
+    <None Include="wwwroot\lib\popper.js\dist\umd\index.js.map" />
+    <None Include="wwwroot\lib\popper.js\dist\umd\index.min.js" />
+    <None Include="wwwroot\lib\popper.js\dist\umd\index.min.js.map" />
+    <None Include="wwwroot\lib\popper.js\lib\dom-utils\getCommonTotalScroll.js" />
+    <None Include="wwwroot\lib\popper.js\lib\dom-utils\getComputedStyle.js" />
+    <None Include="wwwroot\lib\popper.js\lib\dom-utils\getElementClientRect.js" />
+    <None Include="wwwroot\lib\popper.js\lib\dom-utils\getHTMLElementScroll.js" />
+    <None Include="wwwroot\lib\popper.js\lib\dom-utils\getNodeScroll.js" />
+    <None Include="wwwroot\lib\popper.js\lib\dom-utils\getOffsetParent.js" />
+    <None Include="wwwroot\lib\popper.js\lib\dom-utils\getParentNode.js" />
+    <None Include="wwwroot\lib\popper.js\lib\dom-utils\getScrollParent.js" />
+    <None Include="wwwroot\lib\popper.js\lib\dom-utils\getWindow.js" />
+    <None Include="wwwroot\lib\popper.js\lib\dom-utils\getWindowScroll.js" />
+    <None Include="wwwroot\lib\popper.js\lib\dom-utils\listScrollParents.js" />
+    <None Include="wwwroot\lib\popper.js\lib\enums.js" />
+    <None Include="wwwroot\lib\popper.js\lib\index.js" />
+    <None Include="wwwroot\lib\popper.js\lib\modifiers\applyStyles.js" />
+    <None Include="wwwroot\lib\popper.js\lib\modifiers\computeStyles.js" />
+    <None Include="wwwroot\lib\popper.js\lib\modifiers\index.js" />
+    <None Include="wwwroot\lib\popper.js\lib\modifiers\preventOverflow.js" />
+    <None Include="wwwroot\lib\popper.js\lib\types.js" />
+    <None Include="wwwroot\lib\popper.js\lib\utils\computeOffsets.js" />
+    <None Include="wwwroot\lib\popper.js\lib\utils\debounce.js" />
+    <None Include="wwwroot\lib\popper.js\lib\utils\expandEventListeners.js" />
+    <None Include="wwwroot\lib\popper.js\lib\utils\format.js" />
+    <None Include="wwwroot\lib\popper.js\lib\utils\getAltAxis.js" />
+    <None Include="wwwroot\lib\popper.js\lib\utils\getAltLen.js" />
+    <None Include="wwwroot\lib\popper.js\lib\utils\getBasePlacement.js" />
+    <None Include="wwwroot\lib\popper.js\lib\utils\getMainAxisFromPlacement.js" />
+    <None Include="wwwroot\lib\popper.js\lib\utils\getOppositePlacement.js" />
+    <None Include="wwwroot\lib\popper.js\lib\utils\getVariationPlacement.js" />
+    <None Include="wwwroot\lib\popper.js\lib\utils\orderModifiers.js" />
+    <None Include="wwwroot\lib\popper.js\lib\utils\unwrapJqueryElement.js" />
+    <None Include="wwwroot\lib\popper.js\lib\utils\validateModifiers.js" />
+    <None Include="wwwroot\lib\popper.js\README.md" />
+    <None Include="wwwroot\lib\font-awesome\.npmignore" />
+    <None Include="wwwroot\lib\font-awesome\css\font-awesome.css.map" />
+    <None Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\lib\font-awesome\less\animated.less" />
+    <None Include="wwwroot\lib\font-awesome\less\bordered-pulled.less" />
+    <None Include="wwwroot\lib\font-awesome\less\core.less" />
+    <None Include="wwwroot\lib\font-awesome\less\fixed-width.less" />
+    <None Include="wwwroot\lib\font-awesome\less\font-awesome.less" />
+    <None Include="wwwroot\lib\font-awesome\less\icons.less" />
+    <None Include="wwwroot\lib\font-awesome\less\larger.less" />
+    <None Include="wwwroot\lib\font-awesome\less\list.less" />
+    <None Include="wwwroot\lib\font-awesome\less\mixins.less" />
+    <None Include="wwwroot\lib\font-awesome\less\path.less" />
+    <None Include="wwwroot\lib\font-awesome\less\rotated-flipped.less" />
+    <None Include="wwwroot\lib\font-awesome\less\screen-reader.less" />
+    <None Include="wwwroot\lib\font-awesome\less\stacked.less" />
+    <None Include="wwwroot\lib\font-awesome\less\variables.less" />
+    <None Include="wwwroot\lib\font-awesome\README.md" />
+    <None Include="wwwroot\lib\font-awesome\scss\font-awesome.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_animated.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_core.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_fixed-width.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_icons.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_larger.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_list.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_mixins.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_path.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_screen-reader.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_stacked.scss" />
+    <None Include="wwwroot\lib\font-awesome\scss\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="ReflectionIT.Mvc.Paging" Version="3.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.Data\Northwind.Data.csproj" />
+  </ItemGroup>
+
+</Project>
