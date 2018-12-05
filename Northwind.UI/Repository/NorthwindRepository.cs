@@ -39,9 +39,8 @@ namespace Northwind.UI.Repository
         public IList<Product> GetOrderProducts(int OrderId)
         {
             var products = from o in context.OrderDetails
-                           join p in context.Products on o.ProductId equals p.ProductId
                            where o.OrderId == OrderId
-                           select p;
+                           select o.Product;
 
             return products.ToList();
 
